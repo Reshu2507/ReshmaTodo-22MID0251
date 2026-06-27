@@ -202,6 +202,7 @@ function TodoList() {
 
   // XP: 10 XP per completed task
   const completedCount = todos.filter((t) => t.status === 'completed').length;
+  const pendingCount = todos.length - completedCount;
   const currentXP = completedCount * 10;
 
   // Streak days count
