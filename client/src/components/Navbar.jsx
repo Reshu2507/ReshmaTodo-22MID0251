@@ -33,6 +33,14 @@ function Navbar() {
           </li>
           <li>
             <NavLink
+              to="/calendar"
+              className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
+            >
+              Calendar
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
             >

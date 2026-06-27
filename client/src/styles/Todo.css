@@ -549,3 +549,43 @@ textarea.form-control {
     padding: 1.25rem;
   }
 }
+
+/* Celebration Animation */
+@keyframes celebratePop {
+  0% {
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Feed item hover styling */
+.feed-item-hover:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  transform: translateX(4px);
+}
+
+/* Clickable Stats cards hover transitions */
+.clickable-stat:hover {
+  transform: translateY(-4px) !important;
+  border-color: var(--primary) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+/* Priority Stars hover pops */
+.priority-stars-wrapper:hover .priority-star-svg {
+  transform: scale(1.25) rotate(5deg);
+}
+
+/* Gantt Chart hover state */
+.gantt-row-hover:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+

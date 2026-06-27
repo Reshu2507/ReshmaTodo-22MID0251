@@ -7,6 +7,7 @@ import TodoDetails from './pages/TodoDetails';
 import CompletedTasks from './pages/CompletedTasks';
 import PendingTasks from './pages/PendingTasks';
 import ProgressTasks from './pages/ProgressTasks';
+import Calendar from './pages/Calendar';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import './styles/App.css';
@@ -23,6 +24,7 @@ function App() {
             <Route path="/completed" element={<CompletedTasks />} />
             <Route path="/pending" element={<PendingTasks />} />
             <Route path="/progress" element={<ProgressTasks />} />
+            <Route path="/calendar" element={<Calendar />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

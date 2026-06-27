@@ -30,11 +30,30 @@ A Full Stack Multi-Page Todo Application with a React frontend, Node.js + Expres
 ---
 
 ## New Features
-- **Clickable Completed Tasks page:** Dedicated view displaying only completed tasks.
-- **Clickable Pending Tasks page:** Dedicated view displaying only pending tasks.
-- **Clickable Progress Dashboard page:** Displays task statistics and a visual completion progress bar.
-- **Priority Star Indicator on every task:** Stars indicating low (outlined), medium (orange), and high (gold) priority.
-- **Progress Bar with completion statistics:** Visually represents the overall completion progress of tasks.
+
+### Priority Rating System
+- **3-Star Priority System:** Stars indicateLow Priority (★☆☆), Medium Priority (★★☆), and High Priority (★★★) with color-coded fills and hovering tooltips.
+- Indicators appear in the top-right corner of each card and next to the title on the Task Details page.
+
+### Timeline (Gantt Chart)
+- **Interactive Project Timeline:** Horizontal Gantt chart on the main dashboard showing tasks, their start and due dates, completion statuses, and current day marker line.
+- Sorting is automatically adjusted to prioritize tasks approaching deadlines first.
+
+### Calendar View
+- **Monthly Calendar Planner:** Displays tasks on their due dates inside a grid under `/calendar` route, color-coded by priority and completion status.
+
+### XP System
+- **Gamified Tasks:** Completing a task rewards the user with `+10 XP` instantly. Total XP persists and is displayed in the dashboard header.
+
+### Daily Streak
+- **Streak Tracker:** Tracks consecutive days on which the user completed at least one task, showing a flame indicator (`🔥 X Day Streak`).
+
+### Upcoming Deadlines & Analytics
+- **Deadline Highlights:** Coded visual highlights for cards:
+  - 0–2 days remaining: Red border and warning icon
+  - 3–5 days remaining: Orange border
+  - Overdue tasks: Highlights text `⚠ Overdue` with red warnings
+- **Analytics Widgets:** Highlights the next five upcoming deadlines, shows recent CRUD activity logs, and counts overdue, highest priority, and daily/weekly tasks.
 
 ---
 
