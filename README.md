@@ -131,13 +131,5 @@ All endpoints are prefixed with `/api/todos`:
 
 Refer to [API.md](API.md) for full request/response payloads.
 
----
 
-## Screenshots
-
-*(Screenshots can be saved inside the `screenshots/` directory)*
-
-- **Dashboard View:** Shows the statistics panel, filter controls, search bar, and todo list cards.
-- **Details View:** Accessing `/todo?id=<id>` displays full detail inspect views.
-- **About View:** Displays information about the application structure and creator identity.
 
