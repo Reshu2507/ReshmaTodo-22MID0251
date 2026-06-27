@@ -1,0 +1,101 @@
+[
+  {
+    "id": "t1",
+    "title": "Complete Design Documentation",
+    "description": "Write and format the technical details of the Todo Application project.",
+    "status": "completed",
+    "priority": "high",
+    "category": "Work",
+    "createdAt": "2026-06-25T10:00:00.000Z",
+    "updatedAt": "2026-06-25T14:30:00.000Z",
+    "dueDate": "2026-06-28T18:00:00.000Z"
+  },
+  {
+    "id": "t2",
+    "title": "Buy Groceries",
+    "description": "Stock up on vegetables, milk, bread, eggs, and coffee beans.",
+    "status": "pending",
+    "priority": "medium",
+    "category": "Shopping",
+    "createdAt": "2026-06-26T08:00:00.000Z",
+    "updatedAt": "2026-06-26T08:00:00.000Z",
+    "dueDate": "2026-06-27T22:00:00.000Z"
+  },
+  {
+    "id": "t3",
+    "title": "Morning Cardio Session",
+    "description": "Complete a 45-minute jog in the local park and active stretching.",
+    "status": "completed",
+    "priority": "low",
+    "category": "Health",
+    "createdAt": "2026-06-27T06:00:00.000Z",
+    "updatedAt": "2026-06-27T07:00:00.000Z",
+    "dueDate": "2026-06-27T08:00:00.000Z"
+  },
+  {
+    "id": "t4",
+    "title": "Review Code Submissions",
+    "description": "Perform peer reviews for the team's pull requests and merge active branches.",
+    "status": "pending",
+    "priority": "high",
+    "category": "Work",
+    "createdAt": "2026-06-27T09:00:00.000Z",
+    "updatedAt": "2026-06-27T09:00:00.000Z",
+    "dueDate": "2026-06-29T17:00:00.000Z"
+  },
+  {
+    "id": "t5",
+    "title": "Pay Electricity Bill",
+    "description": "Settle the outstanding electricity bill for the month online.",
+    "status": "pending",
+    "priority": "high",
+    "category": "Finance",
+    "createdAt": "2026-06-24T12:00:00.000Z",
+    "updatedAt": "2026-06-24T12:00:00.000Z",
+    "dueDate": "2026-06-30T23:59:59.000Z"
+  },
+  {
+    "id": "t6",
+    "title": "Book Dental Appointment",
+    "description": "Schedule a routine cleaning and dental checkup for next week.",
+    "status": "completed",
+    "priority": "low",
+    "category": "Health",
+    "createdAt": "2026-06-26T15:30:00.000Z",
+    "updatedAt": "2026-06-27T07:52:46.476Z",
+    "dueDate": "2026-07-02T12:00:00.000Z"
+  },
+  {
+    "id": "t7",
+    "title": "Read Book: Clean Code",
+    "description": "Read Chapters 5 through 8 regarding formatting and class structure designs.",
+    "status": "completed",
+    "priority": "medium",
+    "category": "Personal",
+    "createdAt": "2026-06-20T14:00:00.000Z",
+    "updatedAt": "2026-06-25T19:00:00.000Z",
+    "dueDate": "2026-06-26T21:00:00.000Z"
+  },
+  {
+    "id": "t8",
+    "title": "Fix Profile Page Layout Bug",
+    "description": "Correct the css grid layout breaking on mobile devices under 480px width.",
+    "status": "pending",
+    "priority": "high",
+    "category": "Work",
+    "createdAt": "2026-06-27T11:00:00.000Z",
+    "updatedAt": "2026-06-27T11:00:00.000Z",
+    "dueDate": "2026-06-28T13:00:00.000Z"
+  },
+  {
+    "id": "t10",
+    "title": "Clean Workspace",
+    "description": "Organize desk drawers, dust screens, and tidy up office area cables.",
+    "status": "completed",
+    "priority": "low",
+    "category": "Personal",
+    "createdAt": "2026-06-26T09:00:00.000Z",
+    "updatedAt": "2026-06-26T10:30:00.000Z",
+    "dueDate": "2026-06-26T12:00:00.000Z"
+  }
+]

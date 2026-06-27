@@ -1,0 +1,25 @@
+{
+  "name": "reshmatodo-22mid0251",
+  "version": "1.0.0",
+  "description": "Full Stack Todo Application - ReshmaTodo-22MID0251",
+  "main": "server/app.js",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server",
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm start --prefix server\"",
+    "start-server": "npm start --prefix server",
+    "start-client": "npm run dev --prefix client",
+    "build-client": "npm run build --prefix client"
+  },
+  "keywords": [
+    "todo",
+    "react",
+    "express",
+    "node",
+    "fullstack"
+  ],
+  "author": "Reshma (22MID0251)",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
