@@ -29,6 +29,15 @@ A Full Stack Multi-Page Todo Application with a React frontend, Node.js + Expres
 
 ---
 
+## New Features
+- **Clickable Completed Tasks page:** Dedicated view displaying only completed tasks.
+- **Clickable Pending Tasks page:** Dedicated view displaying only pending tasks.
+- **Clickable Progress Dashboard page:** Displays task statistics and a visual completion progress bar.
+- **Priority Star Indicator on every task:** Stars indicating low (outlined), medium (orange), and high (gold) priority.
+- **Progress Bar with completion statistics:** Visually represents the overall completion progress of tasks.
+
+---
+
 ## Folder Structure
 
 ```

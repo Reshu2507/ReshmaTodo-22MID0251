@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { todoService } from '../services/todoService';
 import TodoCard from '../components/TodoCard';
 import TodoForm from '../components/TodoForm';
@@ -9,6 +10,7 @@ import Loader from '../components/Loader';
 import '../styles/Todo.css';
 
 function TodoList() {
+  const navigate = useNavigate();
   const [todos, setTodos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -231,15 +233,15 @@ function TodoList() {
           <span className="stat-title">Total Tasks</span>
           <span className="stat-value">{totalCount}</span>
         </div>
-        <div className="stat-card completed-stat">
+        <div className="stat-card completed-stat clickable-stat" onClick={() => navigate('/completed')} style={{ cursor: 'pointer' }}>
           <span className="stat-title">Completed</span>
           <span className="stat-value">{completedCount}</span>
         </div>
-        <div className="stat-card pending-stat">
+        <div className="stat-card pending-stat clickable-stat" onClick={() => navigate('/pending')} style={{ cursor: 'pointer' }}>
           <span className="stat-title">Pending</span>
           <span className="stat-value">{pendingCount}</span>
         </div>
-        <div className="stat-card">
+        <div className="stat-card clickable-stat" onClick={() => navigate('/progress')} style={{ cursor: 'pointer' }}>
           <span className="stat-title">Progress</span>
           <span className="stat-value">{completionRate}%</span>
         </div>

@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import TodoList from './pages/TodoList';
 import TodoDetails from './pages/TodoDetails';
+import CompletedTasks from './pages/CompletedTasks';
+import PendingTasks from './pages/PendingTasks';
+import ProgressTasks from './pages/ProgressTasks';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import './styles/App.css';
@@ -17,6 +20,9 @@ function App() {
           <Routes>
             <Route path="/" element={<TodoList />} />
             <Route path="/todo" element={<TodoDetails />} />
+            <Route path="/completed" element={<CompletedTasks />} />
+            <Route path="/pending" element={<PendingTasks />} />
+            <Route path="/progress" element={<ProgressTasks />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
@@ -28,3 +34,4 @@ function App() {
 }
 
 export default App;
+

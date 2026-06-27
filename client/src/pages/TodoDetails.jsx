@@ -11,6 +11,37 @@ function TodoDetails() {
   const queryParams = new URLSearchParams(location.search);
   const id = queryParams.get('id');
 
+  const renderPriorityStar = () => {
+    if (!todo) return null;
+    const tooltipText = `${todo.priority.charAt(0).toUpperCase() + todo.priority.slice(1)} Priority`;
+    
+    if (todo.priority === 'high') {
+      return (
+        <span className="priority-star priority-high" title={tooltipText} style={{ color: '#fbbf24', display: 'inline-flex', cursor: 'help' }}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </span>
+      );
+    } else if (todo.priority === 'medium') {
+      return (
+        <span className="priority-star priority-medium" title={tooltipText} style={{ color: '#f97316', display: 'inline-flex', cursor: 'help' }}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </span>
+      );
+    } else {
+      return (
+        <span className="priority-star priority-low" title={tooltipText} style={{ color: '#64748b', display: 'inline-flex', cursor: 'help' }}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </span>
+      );
+    }
+  };
+
   const [todo, setTodo] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -128,7 +159,10 @@ function TodoDetails() {
             <span className={`badge badge-status-${todo.status}`}>{todo.status}</span>
             <span className="badge badge-category">{todo.category}</span>
           </div>
-          <h2 className="details-title">{todo.title}</h2>
+          <h2 className="details-title" style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+            {todo.title}
+            {renderPriorityStar()}
+          </h2>
         </div>
 
         {/* Card Body details section */}
