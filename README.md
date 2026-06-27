@@ -11,8 +11,8 @@ A Full Stack Multi-Page Todo Application with a React frontend, Node.js + Expres
 ---
 
 ## Live Demo
-- **Frontend:** https://YOUR_FRONTEND_URL
-- **Backend API:** https://YOUR_BACKEND_URL/api
+- **Frontend:** https://reshma-todo-22-mid-0251-o664.vercel.app/
+- **Backend API:** https://reshmatodo-22mid0251.onrender.com/api
 
 ---
 
