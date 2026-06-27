@@ -89,60 +89,6 @@ ReshmaTodo-22MID0251/
 └── package.json
 ```
 
----
-
-## Installation & Setup
-
-Ensure you have **Node.js** (v16 or higher) and **npm** installed on your system.
-
-1. Clone or copy this repository directory to your local system:
-   ```bash
-   C:\Users\reshm\ReshmaTodo-22MID0251
-   ```
-
-2. Run the workspace installer at the root directory to automatically fetch dependencies for both the frontend and backend projects:
-   ```bash
-   npm run install-all
-   ```
-
----
-
-## Running the Application
-
-You can spin up both components concurrently or run them in separate terminal instances.
-
-### Option A: Running Concurrently (Recommended)
-Run the following shortcut script in the root directory:
-```bash
-npm run dev
-```
-- This runs the React client server on [http://localhost:3000](http://localhost:3000)
-- This runs the Express backend server on [http://localhost:5000](http://localhost:5000)
-
-### Option B: Running Separately
-
-#### Running the Backend Service
-1. Navigate to the `server/` directory:
-   ```bash
-   cd server
-   ```
-2. Start the server (runs on port 5000):
-   ```bash
-   npm start
-   ```
-
-#### Running the Frontend Client
-1. Navigate to the `client/` directory:
-   ```bash
-   cd client
-   ```
-2. Start the Vite dev server (runs on port 3000):
-   ```bash
-   npm run dev
-   ```
-
----
-
 ## API Summary
 
 All endpoints are prefixed with `/api/todos`:
@@ -167,8 +113,3 @@ Refer to [API.md](API.md) for full request/response payloads.
 - **Details View:** Accessing `/todo?id=<id>` displays full detail inspect views.
 - **About View:** Displays information about the application structure and creator identity.
 
----
-
-## Deployment
-
-Refer to [DEPLOYMENT.md](DEPLOYMENT.md) for step-by-step guidance on pushing to GitHub and launching production environments.
